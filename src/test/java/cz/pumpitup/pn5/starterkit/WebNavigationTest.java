@@ -5,9 +5,9 @@ import org.junit.jupiter.api.Test;
 public class WebNavigationTest {
 
     @Test
-    public void searchPumpITupOnGoogle(Firefox firefox) {
+    public void test(Firefox firefox) {
         firefox
-//                .waitSecondsOf(10)
+                .waitSecondsOf(10)
                 .openGoogleSearchPage()
                     .acceptCookies()
                     .typeIntoSearchBox("pumpitup sro")

@@ -2,6 +2,7 @@ package cz.pumpitup.pn5.starterkit;
 
 import cz.pumpitup.pn5.core.webdriver.Capability;
 import cz.pumpitup.pn5.core.webdriver.ValueType;
+import cz.pumpitup.pn5.starterkit.Internet.pages.pumpitup.PumpITupHomePage;
 import cz.pumpitup.pn5.starterkit.Internet.pages.timeis.TimeIsPage;
 import cz.pumpitup.pn5.web.WebApplication;
 import cz.pumpitup.pn5.starterkit.Internet.pages.google.GoogleSearchPage;
@@ -28,4 +29,7 @@ public interface Firefox extends WebApplication {
         return this;
     }
 
+    default PumpITupHomePage openPumpITupPage() {
+        return open(PumpITupHomePage.class);
+    }
 }
